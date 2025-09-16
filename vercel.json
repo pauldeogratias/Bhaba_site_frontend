@@ -33,7 +33,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(png|jpg|jpeg|webp|svg|ico))",
+      "source": "/(.*\\.(png|jpg|jpeg|webp|svg|ico))$",
       "headers": [
         {
           "key": "Cache-Control",
@@ -48,4 +48,5 @@
       "destination": "/api/sitemap"
     }
   ]
+
 }
