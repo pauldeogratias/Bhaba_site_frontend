@@ -1,7 +1,7 @@
 // hooks/useProducts.ts
 import { useQuery } from '@tanstack/react-query';
-import { SearchParams } from '@/types/api';
-import { Product } from '@/utils/api';
+// import { SearchParams } from '@/types/api';
+import { SearchParams ,Product } from '@/utils/api';
 
 const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:5000';
 
@@ -31,3 +31,4 @@ export const useProducts = (params: SearchParams) => {
     gcTime: 30 * 60 * 1000,   // v5 replacement for cacheTime
   });
 };
+
