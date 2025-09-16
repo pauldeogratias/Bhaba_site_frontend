@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { fetchAllProducts, PaginatedResponse, Product } from '../src/utils/api.ts';
+import { fetchAllProducts, PaginatedResponse, Product } from '../src/utils/api';
 
 const generateSitemap = async (): Promise<void> => {
   try {
@@ -53,6 +53,7 @@ const generateSitemap = async (): Promise<void> => {
 };
 
 generateSitemap();
+
 
 
 
