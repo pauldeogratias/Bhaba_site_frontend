@@ -470,7 +470,7 @@ import { Product } from '../../utils/api'
 import { slugify } from '../../utils/api'
 import { smartShuffle, shuffleArray } from '../../utils/shuffle'
 
-const API_BASE = "https://bhabaapi.onrender.com"
+const API_BASE = "https://bhaba-site-backend-1.onrender.com"
 
 interface CategoryPageProps {
   initialProducts: Product[]
@@ -716,3 +716,4 @@ export async function getStaticPaths() {
 }
 
 export default CategoryPage
+
