@@ -1595,7 +1595,7 @@ const filteredProducts = useMemo(() => {
 }
 
 export async function getStaticProps() {
-  const apiBase = "https://bhabaapi.onrender.com"
+  const apiBase = "https://bhaba-site-backend-1.onrender.com"
   
   try {
     const [featuredProductsRes, vendorsRes, categoriesRes] = await Promise.all([
@@ -1647,5 +1647,6 @@ export async function getStaticProps() {
     }
   }
 }
+
 
 export default Home
