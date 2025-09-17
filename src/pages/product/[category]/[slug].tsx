@@ -616,13 +616,13 @@ const otherProducts = useMemo(() => {
          {/* Legal Links Section - Add this section */}
       <div className="mt-12 border-t pt-8">
         <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-          <Link href="/privacy-policy" className="hover:text-blue-600 transition-colors">
+          <Link href="/privacy-policy-full" className="hover:text-blue-600 transition-colors">
             Privacy Policy
           </Link>
-          <Link href="/terms-of-service" className="hover:text-blue-600 transition-colors">
+          <Link href="/terms-of-service-full" className="hover:text-blue-600 transition-colors">
             Terms of Service
           </Link>
-          <a 
+{/*           <a 
             href="https://bhabalimited.com/privacy_policy" 
             target="_blank" 
             rel="noopener noreferrer"
@@ -637,7 +637,7 @@ const otherProducts = useMemo(() => {
             className="hover:text-blue-600 transition-colors"
           >
             Full Terms of Service
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
@@ -749,4 +749,5 @@ export async function getStaticProps({ params }: { params: { category: string, s
 }
 
 export default ProductDetail
+
 
