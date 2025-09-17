@@ -81,7 +81,7 @@ const ProductDetail: NextPage<ProductDetailProps> = ({ products: initialProducts
 
 
   useEffect(() => {
-     const apiBase = "https://bhabaapi.onrender.com";
+     const apiBase = "https://bhaba-site-backend-1.onrender.com";
     // Fetch product details if not found in initial props
     if (!product && productId) {
       const fetchProduct = async () => {
@@ -658,7 +658,7 @@ const otherProducts = useMemo(() => {
 
 
 export async function getStaticPaths() {
- const apiBase = "https://bhabaapi.onrender.com";
+ const apiBase = "https://bhaba-site-backend-1.onrender.com";
 //     const isBrowser = typeof window !== 'undefined';
 // const isLocalhost = isBrowser && window.location.hostname === 'localhost';
 
@@ -698,7 +698,7 @@ export async function getStaticPaths() {
 
 
 export async function getStaticProps({ params }: { params: { category: string, slug: string } }) {
-  const apiBase = "https://bhabaapi.onrender.com";
+  const apiBase = "https://bhaba-site-backend-1.onrender.com";
 //       const isBrowser = typeof window !== 'undefined';
 // const isLocalhost = isBrowser && window.location.hostname === 'localhost';
 
@@ -749,3 +749,4 @@ export async function getStaticProps({ params }: { params: { category: string, s
 }
 
 export default ProductDetail
+
